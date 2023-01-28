@@ -93,7 +93,7 @@ a {
 }
 
 .hrHead {
-    margin: 0 0 50px 0;
+    margin: 2rem 0 50px 0;
     width: 100%;
     border: 1px solid #11999E;
 }
@@ -286,12 +286,41 @@ main {
 .projectList{
     display: flex;
     flex-direction: column;
+    padding-top: 3rem;
 }
 
-.project1{
+.project{
     display: flex;
     justify-content: center;
 }
+
+.projectImage div img{
+ width: 25rem;
+ margin-top: 1.2rem;
+ border-radius: 10px;
+}
+.projectImage div img:hover{
+ border: 3.5px solid #1f1d38;
+}
+.projectFlex{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.projectDesc{
+    padding-left: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2;
+}
+.gap{
+    flex-direction: column;
+}
+.gap li{
+    margin-right: 10px;
+    font-weight: bolder;
+    font-family: 'Roboto Mono', monospace;
+}
+
 
 
 
