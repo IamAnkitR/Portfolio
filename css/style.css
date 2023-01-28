@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 body {
     margin: 0;
@@ -6,6 +7,20 @@ body {
     font-family: 'Merriweather', serif;
     background-color: #020c1b;
     color: #EAFDFC;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #0f3058;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #092241;
+    outline: 1px solid #020c1b;
+    border-radius: 10px;
 }
 
 .nav-bar {
@@ -26,14 +41,15 @@ body {
     color: #EAFDFC;
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 10px;
     left: 80px;
 }
-.logo img{
+
+.logo img {
     width: 60px;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
 
 .resume-btn {
@@ -70,7 +86,7 @@ main {
 
 .mainText {
     width: 530px;
-    padding-top: 70px ;
+    padding-top: 70px;
 }
 
 .codingImg img {
@@ -100,12 +116,12 @@ main {
 
 .getInTouchBtn {
     text-align: center;
-    margin: 0 0 50px 0;
+    margin: 8rem 0 50px 0;
 }
 
 .getInTouchBtn button {
     border-radius: 8px;
-    padding: 10px 16px;
+    padding: 15px 25px;
     font-size: medium;
     background-color: #081c34;
     border: 2px solid #11999E;
@@ -121,17 +137,18 @@ main {
     cursor: pointer;
 }
 
-footer {
+.footer {
     text-align: center;
+    position: fixed;
 }
 
-footer a {
+.footer a {
     margin: 5px;
 }
 
 .links {
     position: absolute;
-    bottom: 10px;
+    bottom: -6rem;
     left: 80px;
     width: 30px;
     color: #495670;
@@ -144,21 +161,21 @@ footer a {
 
 .vl {
     border-left: 2px solid #495670;
-    height: 100px;
+    height: 150px;
     margin-left: 18px;
 }
 
 .links2 {
     position: absolute;
-    bottom: 10px;
-    right: 80px;
+    bottom: -6rem;
+    left: 88rem;
     width: 30px;
     color: #495670;
 }
 
 .vl2 {
     border-right: 2px solid #495670;
-    height: 100px;
+    height: 150px;
     margin-right: 15px;
 }
 
@@ -167,3 +184,66 @@ footer a {
     color: inherit;
     font-family: 'Roboto Mono', monospace;
 }
+
+.about {
+    margin: 200px 150px 300px 150px;
+}
+
+.aboutHeading {
+    padding-top: 100px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Aboreto', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.hl {
+    border-bottom: 2px solid #495670;
+    width: 200px;
+    margin-left: 18px;
+    margin-bottom: 3rem;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+
+.about img {
+    border: 3px solid #2b3444;
+    border-radius: 10px;
+    float: right;
+    width: 17rem;
+}
+
+.description {
+    width: 35rem;
+    margin: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.techBox{
+    margin-left: 11rem;
+}
+
+.techList {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    line-height: 2;
+}
+.techList div{
+   margin-right: 30px ;
+}
+
+.techList li::before {
+    content: "\25B8";
+    color: #11999E;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
