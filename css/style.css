@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-nav{
+nav {
     height: 7rem;
     width: 100rem;
     background-color: #020c1b;
@@ -49,11 +49,12 @@ nav{
     list-style: none;
 }
 
-.nav-bar li a{
+.nav-bar li a {
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
     color: #EAFDFC;
 }
+
 .nav-bar li a:hover {
     text-decoration: none;
     color: #11999E;
@@ -224,6 +225,7 @@ main {
     margin-left: 18px;
     margin-bottom: 3rem;
 }
+
 .hl1 {
     border-bottom: 2px solid #495670;
     width: 200px;
@@ -250,7 +252,7 @@ main {
     font-family: 'Roboto Mono', monospace;
 }
 
-.techBox{
+.techBox {
     margin-left: 11rem;
 }
 
@@ -260,8 +262,9 @@ main {
     justify-content: start;
     line-height: 2;
 }
-.techList div{
-   margin-right: 30px ;
+
+.techList div {
+    margin-right: 30px;
 }
 
 .techList li::before {
@@ -273,7 +276,7 @@ main {
     margin-left: -1em;
 }
 
-.projectHeading{
+.projectHeading {
     padding-top: 100px;
     font-size: x-large;
     font-weight: bold;
@@ -283,71 +286,115 @@ main {
     color: aquamarine;
 }
 
-.projectList{
+.projectList {
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
 }
 
-.project{
+.project {
     display: flex;
     justify-content: center;
 }
 
-.projectImage div img{
- width: 25rem;
- margin-top: 1.2rem;
- border-radius: 10px;
+.projectImage div img {
+    width: 25rem;
+    margin-top: 1.2rem;
+    border-radius: 10px;
 }
-.projectImage div img:hover{
- border: 3.5px solid #1f1d38;
+
+.projectImage div img:hover {
+    border: 3.5px solid #1f1d38;
 }
-.projectFlex{
+
+.projectFlex {
     display: flex;
     margin-top: 3rem;
 }
 
-.projectDesc{
+.projectDesc {
     padding-left: 2rem;
     font-family: 'Roboto Mono', monospace;
     line-height: 2;
 }
-.gap{
+
+.gap {
     flex-direction: column;
 }
-.gap li{
+
+.gap li {
     margin-right: 10px;
     font-weight: bolder;
     font-family: 'Roboto Mono', monospace;
 }
 
-.footDesc{
+.footDesc {
     font-family: 'Roboto Mono', monospace;
     line-height: 2;
     width: 45vw;
     text-align: center;
     margin: auto;
 }
-.projectMarginBottom{
+
+.projectMarginBottom {
     margin-bottom: -11vh;
 }
-.bottomLinks{
+
+.bottomLinks {
     display: flex;
     justify-content: center;
 }
-.bottomLinks a{
- width: 3vw;
- height: 3vh;
- margin-left: 1vw;
+
+.bottomLinks a {
+    width: 3vw;
+    height: 3vh;
+    margin-left: 1vw;
 }
-footer{
-    max-height:min-content;
+
+footer {
+    max-height: min-content;
     padding-top: 3vh;
     height: 10rem;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     color: #989c9b;
 }
-.endText{
+
+.endText {
     margin-top: 5rem;
+}
+
+@media only screen and (max-width: 40rem) {
+    .links {
+        display: none;
+    }
+
+    main {
+    display: grid;
+    width: 80vw;
+    margin-left: 10vw;
+    }
+
+    .mainText {
+        width: 80vw;
+        padding-top: 5vh;
+    }
+
+    .codingImg img{
+        width: 70vw;
+        margin-left: 3vw;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+    .getInTouchBtn {
+        text-align: center;
+        margin: 2rem 0 50px 0;
+    }
+    
+    .getInTouchBtn button {
+        padding: 10px 10px;    
+    }
+      
 }
