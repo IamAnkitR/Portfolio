@@ -421,8 +421,9 @@ footer {
 
     .description {
         width: 25rem;
-        margin: auto;
+        align-items: center;
         margin-bottom: 1rem;
+        margin-left: 2rem;
     }
 
     .about img {
@@ -452,7 +453,16 @@ footer {
         position: relative;
         right: 6.4rem;
         margin-top: 1.2rem;
+        margin-left: 3rem;
+        align-items: center;
         border-radius: 10px;
+    }
+
+    .projectDesc {
+        padding-left: 2rem;
+        margin-left: 2rem;
+        font-family: 'Roboto Mono', monospace;
+        line-height: 2;
     }
 
     .projectHeading {
@@ -465,9 +475,13 @@ footer {
         color: aquamarine;
     }
 
+    .nav{
+        width: 30rem;
+    }
+
     .nav-bar {
         position: fixed;
-        width: 20rem;
+        width: 10rem;
         top: 1rem;
         left: 5rem;
         margin: 20px 5px;
@@ -478,26 +492,13 @@ footer {
     }
 
     .nav-bar li {
-        margin-left: 10px;
+        margin-left: 15px;
         list-style: none;
     }
 
-    .nav-bar li a {
-        text-decoration: none;
-        font-family: 'Roboto Mono', monospace;
-        color: #EAFDFC;
-    }
     .logo {
-        position: relative;
-        top: 20px;
-        left: 40px;
+       display: none;
     }
-
-    .logo img {
-        width: 60px;
-        margin-top: 20px;
-    }
-
     .resume-btn {
         margin-left: 5px;
     }
