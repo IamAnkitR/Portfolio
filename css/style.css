@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import "media.css";
 
 body {
     margin: 0;
@@ -91,6 +92,13 @@ nav {
 a {
     text-decoration: none;
     color: #11999E;
+}
+
+.ham-box {
+    display: inline-block;
+    position: relative;
+    width: var(--hamburger-width);
+    height: 24px;
 }
 
 .hrHead {
@@ -299,6 +307,7 @@ main {
 
 .projectImage div img {
     width: 25rem;
+    height: 15rem;
     margin-top: 1.2rem;
     border-radius: 10px;
 }
@@ -334,6 +343,7 @@ main {
     width: 45vw;
     text-align: center;
     margin: auto;
+    margin-top: 2rem;
 }
 
 .projectMarginBottom {
@@ -364,15 +374,16 @@ footer {
     margin-top: 5rem;
 }
 
-@media only screen and (max-width: 40rem) {
+@media only screen and (max-width: 600px) {
+
     .links {
         display: none;
     }
 
     main {
-    display: grid;
-    width: 80vw;
-    margin-left: 10vw;
+        display: grid;
+        width: 80vw;
+        margin-left: 10vw;
     }
 
     .mainText {
@@ -380,7 +391,7 @@ footer {
         padding-top: 5vh;
     }
 
-    .codingImg img{
+    .codingImg img {
         width: 70vw;
         margin-left: 3vw;
     }
@@ -388,13 +399,107 @@ footer {
     .text {
         font-size: 1.5rem;
     }
+
     .getInTouchBtn {
         text-align: center;
         margin: 2rem 0 50px 0;
     }
-    
+
     .getInTouchBtn button {
-        padding: 10px 10px;    
+        padding: 10px 10px;
     }
-      
+
+    .aboutHeading {
+        width: 100%;
+        font-size: large;
+    }
+
+    .bio {
+        display: grid;
+        line-height: 2;
+    }
+
+    .description {
+        width: 25rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .about img {
+        border: 3px solid #2b3444;
+        border-radius: 10px;
+        margin-top: 2rem;
+        width: 15rem;
+        margin: auto;
+    }
+
+    .techBox {
+        width: 25rem;
+        margin: auto;
+    }
+
+    .about {
+        margin: 0;
+    }
+
+    .project {
+        display: grid;
+    }
+
+    .projectImage div img {
+        width: 19rem;
+        height: 13rem;
+        position: relative;
+        right: 6.4rem;
+        margin-top: 1.2rem;
+        border-radius: 10px;
+    }
+
+    .projectHeading {
+        padding-top: 100px;
+        font-size: large;
+        font-weight: bold;
+        font-family: 'Aboreto', cursive;
+        display: flex;
+        justify-content: center;
+        color: aquamarine;
+    }
+
+    .nav-bar {
+        position: fixed;
+        width: 20rem;
+        top: 1rem;
+        left: 5rem;
+        margin: 20px 5px;
+        padding-bottom: 6rem;
+        display: flex;
+        justify-content: center;
+        font-size: large;
+    }
+
+    .nav-bar li {
+        margin-left: 10px;
+        list-style: none;
+    }
+
+    .nav-bar li a {
+        text-decoration: none;
+        font-family: 'Roboto Mono', monospace;
+        color: #EAFDFC;
+    }
+    .logo {
+        position: relative;
+        top: 20px;
+        left: 40px;
+    }
+
+    .logo img {
+        width: 60px;
+        margin-top: 20px;
+    }
+
+    .resume-btn {
+        margin-left: 5px;
+    }
+
 }
