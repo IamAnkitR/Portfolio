@@ -8,25 +8,25 @@ setInterval(() => {
     },0);
     setTimeout(()=>{
         text.textContent = "I ";
-    },700);
+    },200);
     setTimeout(()=>{
         text.textContent = "I build";
-    },1150);
+    },550);
     setTimeout(()=>{
         text.textContent = "I build things";
-    },1600);
+    },900);
     setTimeout(()=>{
         text.textContent = "I build things for";
-    },1950);
+    },1350);
     setTimeout(()=>{
         text.textContent = "I build things for the";
-    },2400);
+    },1700);
     setTimeout(()=>{
         text.textContent = "I build things for the web.";
-    },2700);
+    },2100);
 
     count-=1;
-},4000);
+},2500);
 
 
 
