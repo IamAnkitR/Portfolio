@@ -389,7 +389,7 @@ footer {
     }
 
     main {
-        margin: 25% 0 6% 15%;
+        margin: 26% 0 6% 18%;
         display: grid;
         width: 80vw;
         margin-left: 10vw;
@@ -410,15 +410,13 @@ footer {
         margin-left: 2vw;
     }
 
-    
-
     .getInTouchBtn {
         text-align: center;
         margin: 0 0 50px 0;
     }
 
     .getInTouchBtn button {
-        padding: 10px 10px;
+        padding: 12px 12px;
     }
 
     .aboutHeading {
