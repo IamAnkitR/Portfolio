@@ -407,6 +407,10 @@ footer {
         font-size: 1.3rem;
     }
 
+    .big-heading{
+        font-size: 2rem;
+    }
+
     .codingImg img {
         width: 75vw;
         height: 10rem;
