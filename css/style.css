@@ -408,11 +408,12 @@ footer {
         width: 75vw;
         height: 10rem;
         margin-left: 2vw;
+        margin-top: 5vh;
     }
-
+   
     .getInTouchBtn {
         text-align: center;
-        margin: 0 0 50px 0;
+        margin: 7vh 0 50px 0;
     }
 
     .getInTouchBtn button {
@@ -507,7 +508,7 @@ footer {
     }
 
     .projectHeading h2 {
-       font-size: 22px;
+       font-size: 20px;
     }
 
 
@@ -529,6 +530,10 @@ footer {
         font-family: 'Roboto Mono', monospace;
         line-height: 2;
     }
+ 
+    .gap li {
+        margin-left: 50px;
+    }
 
     .projectHeading {
         padding-top: 100px;
@@ -540,6 +545,16 @@ footer {
         color: aquamarine;
     }
 
+    .projectImage div img {
+        width: 25rem;
+        height: 14rem;
+        margin: auto;
+        margin-right: -7vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 10px;
+    }
+    
     .nav {
         width: 30rem;
     }
@@ -572,13 +587,24 @@ footer {
     .footDesc {
         line-height: 2;
         width: 25rem;
-        text-align: center;
-        margin: auto;
+        text-align:initial;
+        margin: 2rem 2rem 5rem 1.5rem;
         margin-top: 2rem;
     }
 
+    .bottomLinks  {
+     margin-right: 2.3rem;
+       
+    }
     .bottomLinks a {
-        margin-left: 1rem;
+        width: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .hrHead {
+        margin: 2rem 0 2rem 1rem;
+        width: 50rem;
+        border: 1px solid #11999E;
     }
 
 }
