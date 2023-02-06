@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-@import "media.css";
 
 body {
     margin: 0;
@@ -376,33 +375,46 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
-    .links {
+    * {
+        margin: 0;
+        padding: 0;
+        max-width: 98%;
+    }
+
+    .vl{
+        display: none;
+    }
+    .vl2{
         display: none;
     }
 
     main {
+        margin: 25% 0 6% 15%;
         display: grid;
         width: 80vw;
         margin-left: 10vw;
     }
 
     .mainText {
-        width: 80vw;
-        padding-top: 5vh;
-    }
-
-    .codingImg img {
-        width: 70vw;
-        margin-left: 3vw;
+        width: 22.5em;
     }
 
     .text {
-        font-size: 1.5rem;
+        padding-top: 2rem;
+        font-size: 1.3rem;
     }
+
+    .codingImg img {
+        width: 75vw;
+        height: 10rem;
+        margin-left: 2vw;
+    }
+
+    
 
     .getInTouchBtn {
         text-align: center;
-        margin: 2rem 0 50px 0;
+        margin: 0 0 50px 0;
     }
 
     .getInTouchBtn button {
@@ -446,9 +458,9 @@ footer {
     .project {
         display: grid;
     }
-   
+
     .projectImage div img {
-      
+
         border: 3px solid #2b3444;
         border-radius: 10px;
         margin-top: 2rem;
@@ -472,7 +484,7 @@ footer {
         color: aquamarine;
     }
 
-    .nav{
+    .nav {
         width: 30rem;
     }
 
@@ -494,8 +506,9 @@ footer {
     }
 
     .logo {
-       display: none;
+        display: none;
     }
+
     .resume-btn {
         margin-left: 5px;
     }
