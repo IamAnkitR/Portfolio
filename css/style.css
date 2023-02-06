@@ -419,28 +419,47 @@ footer {
         padding: 12px 12px;
     }
 
+    .throwaway{
+        height: 2rem;
+        background: inherit;
+    }
+
+    .about {
+        margin: 0;
+    }
+
     .aboutHeading {
+        margin-top: 1rem;
         width: 100%;
-        font-size: large;
+        font-size:medium;
+    }
+    
+    .hl {
+        width: 130px;
+        margin-bottom: 1rem;
     }
 
     .bio {
         display: grid;
-        line-height: 2;
+        margin-top: 2rem;
+    }
+
+    .br{
+        display: none;
     }
 
     .description {
-        width: 25rem;
-        align-items: center;
-        margin-bottom: 1rem;
-        margin-left: 2rem;
+        width: fit-content;
+        padding-left: 1rem;
+        line-height: 1.7;
+        order: 1;
     }
 
     .about img {
         border: 3px solid #2b3444;
         border-radius: 10px;
         margin-top: 2rem;
-        width: 15rem;
+        width: 12rem;
         margin: auto;
     }
 
@@ -449,9 +468,32 @@ footer {
         margin: auto;
     }
 
-    .about {
-        margin: 0;
+    .techList {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        line-height: 2;
     }
+    
+    .techList div {
+        margin-right: 0;
+        width: 30rem;
+    }
+
+    .second-tech li{
+        margin-left: 1rem;
+    }
+    
+    .techList li::before {
+        content: "\25B8";
+        color: #11999E;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    
 
     .project {
         display: grid;
