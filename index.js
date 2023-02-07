@@ -1,17 +1,15 @@
 const text = document.querySelector(".text");
 
-let count = 100;
-
 setInterval(() => {
     setTimeout(()=>{
         text.textContent = "";
     },0);
     setTimeout(()=>{
         text.textContent = "I ";
-    },200);
+    },300);
     setTimeout(()=>{
         text.textContent = "I build";
-    },550);
+    },600);
     setTimeout(()=>{
         text.textContent = "I build things";
     },900);
@@ -25,8 +23,37 @@ setInterval(() => {
         text.textContent = "I build things for the web.";
     },2100);
 
-    count-=1;
-},2500);
+},3000);
+
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    var width = window.innerWidth
+    if(width<700){
+    mainMenu.style.top = '-100%';
+    }
+}
+
 
 
 

@@ -1,27 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Merriweather', serif;
-    background-color: #020c1b;
-    color: #EAFDFC;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-body::-webkit-scrollbar {
-    width: 1rem;
-}
-
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px #0f3058;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #092241;
-    outline: 1px solid #020c1b;
-    border-radius: 10px;
-}
 
 nav {
     height: 7rem;
@@ -60,6 +45,81 @@ nav {
     color: #11999E;
     font-family: 'Roboto Mono', monospace;
 }
+nav .closeMenu{
+    display: none;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #020c1b;
+        transition: top 500ms ease-out 0s;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+        position: fixed;
+        right: 0.5rem;
+        top: 1.9rem;
+    }
+
+    nav .mainMenu li a {
+        padding: 12px;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 500ms ease-out;
+    }
+    .resume-btn {
+        margin-top: 3rem;
+       padding: 2px; 
+    }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020c1b;
+    color: #EAFDFC;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #0f3058;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #092241;
+    outline: 1px solid #020c1b;
+    border-radius: 10px;
+}
+
 
 .logo {
     position: fixed;
@@ -74,9 +134,7 @@ nav {
 
 .resume-btn {
     padding: 5px 10px;
-    margin-left: 50px;
     font-size: large;
-    font-family: 'Roboto Mono', monospace;
     background-color: #081c34;
     border: 2px solid #11999E;
     border-radius: 5px;
@@ -93,13 +151,6 @@ a {
     color: #11999E;
 }
 
-.ham-box {
-    display: inline-block;
-    position: relative;
-    width: var(--hamburger-width);
-    height: 24px;
-}
-
 .hrHead {
     margin: 2rem 0 50px 0;
     width: 100%;
@@ -114,7 +165,7 @@ main {
 .mainText {
     width: 530px;
     padding-top: 70px;
-    font-family: 'Roboto Mono', monospace; 
+    font-family: 'Roboto Mono', monospace;
 }
 
 .codingImg img {
@@ -384,10 +435,11 @@ footer {
         max-width: 98%;
     }
 
-    .vl{
+    .vl {
         display: none;
     }
-    .vl2{
+
+    .vl2 {
         display: none;
     }
 
@@ -407,7 +459,7 @@ footer {
         font-size: 1.3rem;
     }
 
-    .big-heading{
+    .big-heading {
         font-size: 2rem;
     }
 
@@ -417,7 +469,7 @@ footer {
         margin-left: 2vw;
         margin-top: 5vh;
     }
-   
+
     .getInTouchBtn {
         text-align: center;
         margin: 7vh 0 50px 0;
@@ -427,7 +479,7 @@ footer {
         padding: 12px 12px;
     }
 
-    .throwaway{
+    .throwaway {
         height: 2rem;
         background: inherit;
     }
@@ -440,9 +492,9 @@ footer {
         margin-top: 0;
         margin-bottom: 5rem;
         width: 100%;
-        font-size:medium;
+        font-size: medium;
     }
-    
+
     .hl {
         width: 130px;
         margin-bottom: 1rem;
@@ -453,7 +505,7 @@ footer {
         margin-top: 2rem;
     }
 
-    .br{
+    .br {
         display: none;
     }
 
@@ -488,16 +540,16 @@ footer {
         justify-content: center;
         line-height: 2;
     }
-    
+
     .techList div {
         margin-right: 0;
         width: 30rem;
     }
 
-    .second-tech li{
+    .second-tech li {
         margin-left: 1rem;
     }
-    
+
     .techList li::before {
         content: "\25B8";
         color: #11999E;
@@ -515,14 +567,14 @@ footer {
     }
 
     .projectHeading h2 {
-       font-size: 20px;
+        font-size: 20px;
     }
 
 
     .project {
-        display: grid;   
+        display: grid;
     }
-   
+
     .projectImage div img {
 
         border: 3px solid #2b3444;
@@ -537,7 +589,7 @@ footer {
         font-family: 'Roboto Mono', monospace;
         line-height: 2;
     }
- 
+
     .gap li {
         margin-left: 50px;
     }
@@ -561,14 +613,13 @@ footer {
         margin-bottom: 2vh;
         border-radius: 10px;
     }
-    
+
     .nav {
         width: 30rem;
     }
 
     .nav-bar {
         position: fixed;
-        width: 10rem;
         top: 1rem;
         left: 5rem;
         margin: 20px 5px;
@@ -584,7 +635,9 @@ footer {
     }
 
     .logo {
-        display: none;
+        position: absolute;
+        top: 3vh;
+        left: 8vw;
     }
 
     .resume-btn {
@@ -594,15 +647,16 @@ footer {
     .footDesc {
         line-height: 2;
         width: 25rem;
-        text-align:initial;
+        text-align: initial;
         margin: 2rem 2rem 5rem 1.5rem;
         margin-top: 2rem;
     }
 
-    .bottomLinks  {
-     margin-right: 2.3rem;
-       
+    .bottomLinks {
+        margin-right: 2.3rem;
+
     }
+
     .bottomLinks a {
         width: 1.5rem;
         margin-left: 1.5rem;
