@@ -50,7 +50,7 @@ function show(){
 function close(){
     var width = window.innerWidth
     if(width<700){
-    mainMenu.style.top = '-100%';
+    mainMenu.style.top = '-120%';
     }
 }
 
