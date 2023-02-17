@@ -229,7 +229,7 @@ main {
 }
 
 .aboutHeading {
-    padding-top: 100px;
+    padding-top: 120px;
     font-size: x-large;
     font-weight: bold;
     font-family: 'Aboreto', cursive;
@@ -242,14 +242,14 @@ main {
     border-bottom: 2px solid #495670;
     width: 200px;
     margin-left: 18px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .hl1 {
     border-bottom: 2px solid #495670;
     width: 200px;
     margin-right: 18px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .bio {
@@ -296,7 +296,7 @@ main {
 }
 
 .projectHeading {
-    padding-top: 100px;
+    padding-top: 120px;
     font-size: x-large;
     font-weight: bold;
     font-family: 'Aboreto', cursive;
@@ -458,7 +458,7 @@ footer {
     }
 
     .text {
-        margin-top: 1.5rem;
+        padding-top: 2rem;
         font-size: 1.3rem;
     }
 
@@ -492,6 +492,7 @@ footer {
     }
 
     .aboutHeading {
+        padding-top: 100px;
         margin-top: 0;
         margin-bottom: 5rem;
         width: 100%;
@@ -570,7 +571,7 @@ footer {
     }
 
     .projectHeading h2 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
 
