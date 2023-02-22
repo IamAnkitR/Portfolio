@@ -79,7 +79,7 @@ nav {
     font-family: 'Roboto Mono', monospace;
 }
 
-nav .closeMenu{
+nav .closeMenu {
     display: none;
 }
 
@@ -338,6 +338,11 @@ main {
     line-height: 2;
 }
 
+.moreProjects {
+    text-align: center;
+    margin-top: 3rem;
+}
+
 .gap {
     flex-direction: column;
 }
@@ -423,9 +428,10 @@ footer {
         text-transform: uppercase;
         transition: 500ms ease-out;
     }
+
     .resume-btn {
         margin-top: 3rem;
-       padding: 2px; 
+        padding: 2px;
     }
 
 }
@@ -616,6 +622,10 @@ footer {
         margin-top: 2vh;
         margin-bottom: 2vh;
         border-radius: 10px;
+    }
+
+    footer{
+        margin-top: 5rem;
     }
 
     .nav {
