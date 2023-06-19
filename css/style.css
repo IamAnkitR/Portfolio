@@ -143,11 +143,15 @@ main {
     font-size: 3rem;
 }
 
-.text {
+.animate {
+    margin-top: 2rem;
+}
+
+#element {
     height: 2.5rem;
     line-height: 1;
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 550;
     font-family: 'Roboto Mono', monospace;
     color: aquamarine;
@@ -459,6 +463,16 @@ footer {
         margin-left: 10vw;
     }
 
+    #element {
+        height: 2.5rem;
+        line-height: 1;
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        font-weight: 550;
+        font-family: 'Roboto Mono', monospace;
+        color: aquamarine;
+    }
+
     .mainText {
         width: 22.5em;
     }
@@ -624,7 +638,7 @@ footer {
         border-radius: 10px;
     }
 
-    footer{
+    footer {
         margin-top: 5rem;
     }
 
